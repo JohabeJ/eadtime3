@@ -19,19 +19,49 @@ public class JFramePrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton1 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
         jMenuBarPrincipal = new javax.swing.JMenuBar();
         jMenuSistema = new javax.swing.JMenu();
+        jMenuItemListaAssuntos = new javax.swing.JMenuItem();
+        jMenuItemListaUnidades = new javax.swing.JMenuItem();
+        jMenuItemPesquisaProc = new javax.swing.JMenuItem();
+        jMenuItemTramiteProc = new javax.swing.JMenuItem();
         jMenuItemSair = new javax.swing.JMenuItem();
         jMenuCadastro = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItemProcesso = new javax.swing.JMenuItem();
+        jMenuItemUnidades = new javax.swing.JMenuItem();
+        jMenuItemAssuntos = new javax.swing.JMenuItem();
         jMenuAjuda = new javax.swing.JMenu();
         jMenuItemSobre = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Meu Programa");
 
+        jButton1.setText("jButton1");
+
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(jList1);
+
         jMenuSistema.setMnemonic('S');
         jMenuSistema.setText("Sistema");
+
+        jMenuItemListaAssuntos.setText("Listar Assuntos...");
+        jMenuSistema.add(jMenuItemListaAssuntos);
+
+        jMenuItemListaUnidades.setText("Listar Unidades...");
+        jMenuSistema.add(jMenuItemListaUnidades);
+
+        jMenuItemPesquisaProc.setText("Pesquisar Processos...");
+        jMenuSistema.add(jMenuItemPesquisaProc);
+
+        jMenuItemTramiteProc.setText("Tramite de Processos...");
+        jMenuSistema.add(jMenuItemTramiteProc);
 
         jMenuItemSair.setMnemonic('r');
         jMenuItemSair.setText("Sair");
@@ -47,13 +77,24 @@ public class JFramePrincipal extends javax.swing.JFrame {
         jMenuCadastro.setMnemonic('C');
         jMenuCadastro.setText("Cadastro");
 
-        jMenuItem1.setText("Processos...");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemProcesso.setText("Processos...");
+        jMenuItemProcesso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenuItemProcessoActionPerformed(evt);
             }
         });
-        jMenuCadastro.add(jMenuItem1);
+        jMenuCadastro.add(jMenuItemProcesso);
+
+        jMenuItemUnidades.setText("Unidades..");
+        jMenuCadastro.add(jMenuItemUnidades);
+
+        jMenuItemAssuntos.setText("Assuntos...");
+        jMenuItemAssuntos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemAssuntosActionPerformed(evt);
+            }
+        });
+        jMenuCadastro.add(jMenuItemAssuntos);
 
         jMenuBarPrincipal.add(jMenuCadastro);
 
@@ -96,16 +137,29 @@ public class JFramePrincipal extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jMenuItemSairActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    private void jMenuItemProcessoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemProcessoActionPerformed
+    }//GEN-LAST:event_jMenuItemProcessoActionPerformed
+
+    private void jMenuItemAssuntosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemAssuntosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemAssuntosActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JList<String> jList1;
     private javax.swing.JMenu jMenuAjuda;
     private javax.swing.JMenuBar jMenuBarPrincipal;
     private javax.swing.JMenu jMenuCadastro;
-    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItemAssuntos;
+    private javax.swing.JMenuItem jMenuItemListaAssuntos;
+    private javax.swing.JMenuItem jMenuItemListaUnidades;
+    private javax.swing.JMenuItem jMenuItemPesquisaProc;
+    private javax.swing.JMenuItem jMenuItemProcesso;
     private javax.swing.JMenuItem jMenuItemSair;
     private javax.swing.JMenuItem jMenuItemSobre;
+    private javax.swing.JMenuItem jMenuItemTramiteProc;
+    private javax.swing.JMenuItem jMenuItemUnidades;
     private javax.swing.JMenu jMenuSistema;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
