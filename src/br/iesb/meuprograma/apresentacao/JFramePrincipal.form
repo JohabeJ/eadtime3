@@ -20,14 +20,14 @@
                 <Property name="text" type="java.lang.String" value="Listar Unidades..."/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPesquisaProc">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Pesquisar Processos..."/>
-              </Properties>
-            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTramiteProc">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Tramite de Processos..."/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPesquisaProc">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pesquisar Processos..."/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemSair">
@@ -57,7 +57,7 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemUnidades">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Unidades.."/>
+                <Property name="text" type="java.lang.String" value="Unidades..."/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAssuntos">

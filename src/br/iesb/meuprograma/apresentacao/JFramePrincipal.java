@@ -26,8 +26,8 @@ public class JFramePrincipal extends javax.swing.JFrame {
         jMenuSistema = new javax.swing.JMenu();
         jMenuItemListaAssuntos = new javax.swing.JMenuItem();
         jMenuItemListaUnidades = new javax.swing.JMenuItem();
-        jMenuItemPesquisaProc = new javax.swing.JMenuItem();
         jMenuItemTramiteProc = new javax.swing.JMenuItem();
+        jMenuItemPesquisaProc = new javax.swing.JMenuItem();
         jMenuItemSair = new javax.swing.JMenuItem();
         jMenuCadastro = new javax.swing.JMenu();
         jMenuItemProcesso = new javax.swing.JMenuItem();
@@ -57,11 +57,11 @@ public class JFramePrincipal extends javax.swing.JFrame {
         jMenuItemListaUnidades.setText("Listar Unidades...");
         jMenuSistema.add(jMenuItemListaUnidades);
 
-        jMenuItemPesquisaProc.setText("Pesquisar Processos...");
-        jMenuSistema.add(jMenuItemPesquisaProc);
-
         jMenuItemTramiteProc.setText("Tramite de Processos...");
         jMenuSistema.add(jMenuItemTramiteProc);
+
+        jMenuItemPesquisaProc.setText("Pesquisar Processos...");
+        jMenuSistema.add(jMenuItemPesquisaProc);
 
         jMenuItemSair.setMnemonic('r');
         jMenuItemSair.setText("Sair");
@@ -85,7 +85,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
         });
         jMenuCadastro.add(jMenuItemProcesso);
 
-        jMenuItemUnidades.setText("Unidades..");
+        jMenuItemUnidades.setText("Unidades...");
         jMenuCadastro.add(jMenuItemUnidades);
 
         jMenuItemAssuntos.setText("Assuntos...");
