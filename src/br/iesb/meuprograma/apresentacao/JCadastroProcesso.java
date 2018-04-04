@@ -69,23 +69,14 @@ public class JCadastroProcesso extends javax.swing.JFrame {
 
         jLabel4.setText("Assunto");
 
+        assunto_processo.setEditable(true);
         assunto_processo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-- Selecione um assunto --", "exemplo", "outro exemplo", "mais um exemplo" }));
-        assunto_processo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                assunto_processoActionPerformed(evt);
-            }
-        });
 
         jLabel5.setText("Descrição");
 
         jLabel6.setText("Anexos");
 
         arquivo_processo.setText("Selecione um arquivo");
-        arquivo_processo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                arquivo_processoActionPerformed(evt);
-            }
-        });
 
         jButton1.setText("Adicionar");
 
@@ -102,11 +93,6 @@ public class JCadastroProcesso extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTable2);
 
         salvar_button.setText("Salvar");
-        salvar_button.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                salvar_buttonActionPerformed(evt);
-            }
-        });
 
         cancelar_button.setText("Cancelar");
 
@@ -179,7 +165,7 @@ public class JCadastroProcesso extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(salvar_button)
                     .addComponent(cancelar_button))
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
 
         pack();
@@ -192,18 +178,6 @@ public class JCadastroProcesso extends javax.swing.JFrame {
     private void data_processoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_data_processoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_data_processoActionPerformed
-
-    private void assunto_processoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assunto_processoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_assunto_processoActionPerformed
-
-    private void arquivo_processoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arquivo_processoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_arquivo_processoActionPerformed
-
-    private void salvar_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_buttonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_salvar_buttonActionPerformed
 
     /**
      * @param args the command line arguments

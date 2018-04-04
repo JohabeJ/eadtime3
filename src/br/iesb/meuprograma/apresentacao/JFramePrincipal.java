@@ -46,6 +46,11 @@ public class JFramePrincipal extends javax.swing.JFrame {
         jMenuSistema.add(jMenuItemListaUnidades);
 
         jMenuItemTramiteProc.setText("Tramite de Processos...");
+        jMenuItemTramiteProc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemTramiteProcActionPerformed(evt);
+            }
+        });
         jMenuSistema.add(jMenuItemTramiteProc);
 
         jMenuItemPesquisaProc.setText("Pesquisar Processos...");
@@ -154,6 +159,12 @@ public class JFramePrincipal extends javax.swing.JFrame {
         JCadastroUnidade cadUnidade = new JCadastroUnidade();
         cadUnidade.setVisible(true);
     }//GEN-LAST:event_jMenuItemUnidadesActionPerformed
+
+    private void jMenuItemTramiteProcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemTramiteProcActionPerformed
+        // TODO add your handling code here:
+        JTramiteProcesso tramiteProc = new JTramiteProcesso();
+        tramiteProc.setVisible(true);
+    }//GEN-LAST:event_jMenuItemTramiteProcActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenuAjuda;
