@@ -19,9 +19,6 @@ public class JFramePrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
         jMenuBarPrincipal = new javax.swing.JMenuBar();
         jMenuSistema = new javax.swing.JMenu();
         jMenuItemListaAssuntos = new javax.swing.JMenuItem();
@@ -38,15 +35,6 @@ public class JFramePrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Meu Programa");
-
-        jButton1.setText("jButton1");
-
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane1.setViewportView(jList1);
 
         jMenuSistema.setMnemonic('S');
         jMenuSistema.setText("Sistema");
@@ -86,6 +74,16 @@ public class JFramePrincipal extends javax.swing.JFrame {
         jMenuCadastro.add(jMenuItemProcesso);
 
         jMenuItemUnidades.setText("Unidades...");
+        jMenuItemUnidades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemUnidadesActionPerformed(evt);
+            }
+        });
+        jMenuItemUnidades.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jMenuItemUnidadesKeyPressed(evt);
+            }
+        });
         jMenuCadastro.add(jMenuItemUnidades);
 
         jMenuItemAssuntos.setText("Assuntos...");
@@ -138,15 +136,26 @@ public class JFramePrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItemSairActionPerformed
 
     private void jMenuItemProcessoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemProcessoActionPerformed
+        JCadastroProcesso processo = new JCadastroProcesso();
+        processo.setVisible(true);
     }//GEN-LAST:event_jMenuItemProcessoActionPerformed
 
     private void jMenuItemAssuntosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemAssuntosActionPerformed
-        // TODO add your handling code here:
+        JCadastroAssunto assunto = new JCadastroAssunto();
+        assunto.setVisible(true);
     }//GEN-LAST:event_jMenuItemAssuntosActionPerformed
 
+    private void jMenuItemUnidadesKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jMenuItemUnidadesKeyPressed
+
+    }//GEN-LAST:event_jMenuItemUnidadesKeyPressed
+
+    private void jMenuItemUnidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemUnidadesActionPerformed
+        // TODO add your handling code here:
+        JCadastroUnidade cadUnidade = new JCadastroUnidade();
+        cadUnidade.setVisible(true);
+    }//GEN-LAST:event_jMenuItemUnidadesActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JList<String> jList1;
     private javax.swing.JMenu jMenuAjuda;
     private javax.swing.JMenuBar jMenuBarPrincipal;
     private javax.swing.JMenu jMenuCadastro;
@@ -160,6 +169,5 @@ public class JFramePrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemTramiteProc;
     private javax.swing.JMenuItem jMenuItemUnidades;
     private javax.swing.JMenu jMenuSistema;
-    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
